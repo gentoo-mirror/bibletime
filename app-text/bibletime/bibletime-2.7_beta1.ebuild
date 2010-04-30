@@ -25,6 +25,8 @@ DEPEND="${RDEPEND}
 
 DOCS="ChangeLog README"
 
+S="${WORKDIR}/${PN}-2.7.beta1"
+
 src_configure() {
 	mycmakeargs="${mycmakeargs}
 		-DUSE_QT_WEBKIT=ON"

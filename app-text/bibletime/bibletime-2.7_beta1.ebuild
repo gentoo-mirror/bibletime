@@ -1,6 +1,7 @@
 # Copyright 1999-2009 Gentoo Foundation
+# Copyright 2010 The BibleTime team
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/bibletime/bibletime-2.5.ebuild,v 1.1 2009/12/25 17:35:23 ssuominen Exp $
+# $Header: $
 
 EAPI=2
 inherit cmake-utils

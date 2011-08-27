@@ -1,0 +1,2 @@
+# The following versions of BibleTime are fficially unsupported by the BibleTime team:
+<app-text/bibletime-2.8.3

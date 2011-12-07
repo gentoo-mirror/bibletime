@@ -1,3 +1,18 @@
 # Only the most recent version of each branch is officially supported by the
 # BibleTime team:
-app-text/bibletime
+~app-text/bibletime-2.6
+~app-text/bibletime-2.7.1
+~app-text/bibletime-2.7.2
+~app-text/bibletime-2.7.3
+~app-text/bibletime-2.7
+~app-text/bibletime-2.8.0
+~app-text/bibletime-2.8.1
+~app-text/bibletime-2.8.2
+~app-text/bibletime-2.8.3
+~app-text/bibletime-2.8_beta1
+~app-text/bibletime-2.8_rc1
+~app-text/bibletime-2.8_rc2
+~app-text/bibletime-2.9_beta1
+~app-text/bibletime-2.9_beta2
+~app-text/bibletime-2.9_rc1
+~app-text/bibletime-2.9_rc2

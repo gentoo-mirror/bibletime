@@ -17,12 +17,12 @@ IUSE="debug"
 
 RDEPEND=">=app-text/sword-1.6.0
 	>=dev-cpp/clucene-0.9.16a
-	x11-libs/qt-dbus:4
-	x11-libs/qt-gui:4
-	x11-libs/qt-webkit:4"
+	dev-qt/qtdbus:4
+	dev-qt/qtgui:4
+	dev-qt/qtwebkit:4"
 DEPEND="${RDEPEND}
 	dev-libs/boost
-	x11-libs/qt-test:4"
+	dev-qt/qttest:4"
 
 DOCS="ChangeLog README"
 

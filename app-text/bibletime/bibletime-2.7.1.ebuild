@@ -1,9 +1,9 @@
 # Copyright 1999-2009 Gentoo Foundation
-# Copyright 2010 The BibleTime team
+# Copyright 2010-2013 The BibleTime team
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
+EAPI=5
 inherit cmake-utils
 
 DESCRIPTION="Qt4 Bible study application using the SWORD library."
@@ -21,12 +21,12 @@ RDEPEND=">=app-text/sword-1.6.0
 	dev-qt/qtgui:4
 	dev-qt/qtwebkit:4"
 DEPEND="${RDEPEND}
+	dev-libs/boost
 	dev-qt/qttest:4"
 
 DOCS="ChangeLog README"
 
 src_configure() {
-	mycmakeargs="${mycmakeargs}
-		-DUSE_QT_WEBKIT=ON"
+	mycmakeargs="${mycmakeargs} -DUSE_QT_WEBKIT=ON"
 	cmake-utils_src_configure
 }

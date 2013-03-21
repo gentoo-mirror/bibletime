@@ -1,9 +1,9 @@
 # Copyright 1999-2009 Gentoo Foundation
-# Copyright 2010-2011 The BibleTime team
+# Copyright 2010-2013 The BibleTime team
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
+EAPI=5
 inherit cmake-utils
 
 DESCRIPTION="Qt4 Bible study application using the SWORD library."

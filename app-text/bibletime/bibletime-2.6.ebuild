@@ -1,14 +1,14 @@
 # Copyright 1999-2009 Gentoo Foundation
-# Copyright 2010 The BibleTime team
+# Copyright 2010-2013 The BibleTime team
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
+EAPI=5
 inherit cmake-utils
 
 DESCRIPTION="Qt4 Bible study application using the SWORD library."
 HOMEPAGE="http://www.bibletime.info/"
-SRC_URI="mirror://sourceforge/bibletime/${P}.tar.gz"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -27,7 +27,6 @@ DEPEND="${RDEPEND}
 DOCS="ChangeLog README"
 
 src_configure() {
-	mycmakeargs="${mycmakeargs}
-		-DUSE_QT_WEBKIT=ON"
+	mycmakeargs="${mycmakeargs} -DUSE_QT_WEBKIT=ON"
 	cmake-utils_src_configure
 }

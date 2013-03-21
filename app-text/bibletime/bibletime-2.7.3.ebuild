@@ -17,6 +17,7 @@ IUSE="debug"
 
 RDEPEND=">=app-text/sword-1.6.0
 	>=dev-cpp/clucene-0.9.16a
+	<dev-cpp/clucene-1.0
 	dev-qt/qtdbus:4
 	dev-qt/qtgui:4
 	dev-qt/qtwebkit:4"

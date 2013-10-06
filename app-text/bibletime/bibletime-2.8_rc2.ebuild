@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE="debug"
 
-RDEPEND=">=app-text/sword-1.6.0
+RDEPEND="=app-text/sword-1.6*
 	>=dev-cpp/clucene-0.9.16a
 	<dev-cpp/clucene-1.0
 	dev-qt/qtdbus:4

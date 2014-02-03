@@ -15,17 +15,18 @@ SLOT="0"
 KEYWORDS="alpha amd64 hppa ia64 ppc ppc64 sparc x86"
 IUSE="debug"
 
-RDEPEND=">=app-text/sword-1.7
-	>=dev-cpp/clucene-0.9.16a
-	dev-qt/qtdbus:4
-	dev-qt/qtgui:4
-	dev-qt/qtwebkit:4"
+RDEPEND="
+  >=app-text/sword-1.7[curl]
+  >=dev-cpp/clucene-0.9.16a
+  dev-qt/qtdbus:4
+  dev-qt/qtgui:4
+  dev-qt/qtwebkit:4"
 DEPEND="${RDEPEND}
-	dev-qt/qttest:4"
+  dev-qt/qttest:4"
 
 DOCS="ChangeLog README"
 
 src_configure() {
-	mycmakeargs="${mycmakeargs} -DUSE_QT_WEBKIT=ON"
-	cmake-utils_src_configure
+  mycmakeargs="${mycmakeargs} -DUSE_QT_WEBKIT=ON"
+  cmake-utils_src_configure
 }

@@ -27,6 +27,10 @@ DEPEND="${RDEPEND}
 
 DOCS="ChangeLog README"
 
+pkg_setup() {
+  einfo "Please file bugs for this ebuild to http://bugs.bibletime.info/"
+}
+
 src_configure() {
 	mycmakeargs="${mycmakeargs} -DUSE_QT_WEBKIT=ON"
 	cmake-utils_src_configure

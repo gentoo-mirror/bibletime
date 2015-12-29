@@ -17,6 +17,7 @@ KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 RDEPEND="
   >=app-text/sword-1.7[curl]
   >=dev-cpp/clucene-0.9.16a
+  dev-qt/linguist-tools:5
   dev-qt/qtcore:5
   dev-qt/qtgui:5
   dev-qt/qtnetwork:5

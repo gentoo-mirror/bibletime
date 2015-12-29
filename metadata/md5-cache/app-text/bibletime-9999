@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=>=app-text/sword-1.7[curl] >=dev-cpp/clucene-0.9.16a dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtprintsupport:5 dev-qt/qtscript:5 dev-qt/qtsvg:5 dev-qt/qtwebkit:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 dev-qt/qttest:5 sys-devel/make >=dev-util/cmake-2.8.12 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) >=dev-vcs/git-1.8.2.1
+DEPEND=>=app-text/sword-1.7[curl] >=dev-cpp/clucene-0.9.16a dev-qt/linguist-tools:5 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtprintsupport:5 dev-qt/qtscript:5 dev-qt/qtsvg:5 dev-qt/qtwebkit:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 dev-qt/qttest:5 sys-devel/make >=dev-util/cmake-2.8.12 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) >=dev-vcs/git-1.8.2.1
 DESCRIPTION=Qt4 Bible study application using the SWORD library.
 EAPI=5
 HOMEPAGE=http://www.bibletime.info/
 KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=>=app-text/sword-1.7[curl] >=dev-cpp/clucene-0.9.16a dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtprintsupport:5 dev-qt/qtscript:5 dev-qt/qtsvg:5 dev-qt/qtwebkit:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5
+RDEPEND=>=app-text/sword-1.7[curl] >=dev-cpp/clucene-0.9.16a dev-qt/linguist-tools:5 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtprintsupport:5 dev-qt/qtscript:5 dev-qt/qtsvg:5 dev-qt/qtwebkit:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5
 SLOT=0
 _eclass_exported_funcs=pkg_setup:- src_unpack:git-r3 src_prepare:cmake-utils src_configure:- src_compile:cmake-utils src_test:cmake-utils src_install:cmake-utils
 _eclasses_=cmake-utils	b657a2689df4f46725711250cf9c8a32	eutils	d9bd2ddd85a58e470b49ca997e255a4c	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	git-r3	0961ca04f93a7ae0e4c4a0b2b8c3be99	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	versionator	99ae9d758cbe7cfed19170e7d48f5a9c
-_md5_=25d699d690b04f2c7ed797a19ff6f67f
+_md5_=7715f346d5c6e983c2667fe1569966fa

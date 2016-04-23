@@ -33,7 +33,7 @@ DEPEND="${RDEPEND}
 DOCS="ChangeLog README.md"
 
 pkg_setup() {
-    einfo "Please file bugs for this ebuild to https://github.com/bibletime/bibletime/issues"
+  einfo "Please file bugs for this ebuild to https://github.com/bibletime/bibletime/issues"
 }
 
 src_configure() {

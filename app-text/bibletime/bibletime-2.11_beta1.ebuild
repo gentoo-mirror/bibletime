@@ -4,15 +4,16 @@
 # $Header: $
 
 EAPI=5
-inherit cmake-utils git-r3
+inherit cmake-utils
 
 DESCRIPTION="Qt4 Bible study application using the SWORD library."
 HOMEPAGE="http://www.bibletime.info/"
-EGIT_REPO_URI="https://github.com/bibletime/bibletime.git"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
+IUSE="debug"
 
 RDEPEND="
   >=app-text/sword-1.7[curl]

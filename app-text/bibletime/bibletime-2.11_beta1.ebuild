@@ -19,13 +19,17 @@ RDEPEND="
   >=app-text/sword-1.7[curl]
   >=dev-cpp/clucene-0.9.16a
   dev-qt/linguist-tools:5
-  dev-qt/qtcore:5
+  || ( ( <dev-qt/qtcore-5.6.0:5
+         dev-qt/qtwebkit:5 )
+       ( >=dev-qt/qtcore-5.6.0:5
+         dev-qt/qtwebengine:5
+         dev-qt/qtwebchannel:5 )
+     )
   dev-qt/qtgui:5
   dev-qt/qtnetwork:5
   dev-qt/qtprintsupport:5
   dev-qt/qtscript:5
   dev-qt/qtsvg:5
-  dev-qt/qtwebkit:5
   dev-qt/qtwidgets:5
   dev-qt/qtxml:5"
 DEPEND="${RDEPEND}

@@ -22,7 +22,7 @@ RDEPEND="
   || ( ( <dev-qt/qtcore-5.6.0:5
          dev-qt/qtwebkit:5 )
        ( >=dev-qt/qtcore-5.6.0:5
-         dev-qt/qtwebengine:5
+         dev-qt/qtwebengine:5[widgets]
          dev-qt/qtwebchannel:5 )
      )
   dev-qt/qtgui:5

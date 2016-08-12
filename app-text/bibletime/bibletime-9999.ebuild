@@ -6,7 +6,7 @@
 EAPI=5
 inherit cmake-utils git-r3
 
-DESCRIPTION="Qt4 Bible study application using the SWORD library."
+DESCRIPTION="Qt5 Bible study application using the SWORD library."
 HOMEPAGE="http://www.bibletime.info/"
 EGIT_REPO_URI="https://github.com/bibletime/bibletime.git"
 

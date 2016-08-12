@@ -6,7 +6,7 @@
 EAPI=5
 inherit cmake-utils
 
-DESCRIPTION="Qt4 Bible study application using the SWORD library."
+DESCRIPTION="Qt5 Bible study application using the SWORD library."
 HOMEPAGE="http://www.bibletime.info/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.xz"
 

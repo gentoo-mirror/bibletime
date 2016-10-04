@@ -31,6 +31,15 @@ pkg_setup() {
 }
 
 src_configure() {
-  mycmakeargs="${mycmakeargs} -DUSE_QT_WEBKIT=ON"
-  cmake-utils_src_configure
+    local mycmakeargs="${mycmakeargs} -DUSE_QT_WEBKIT=ON"
+    if use debug; then
+        mycmakeargs+=(
+            -DCMAKE_BUILD_TYPE=Debug
+        )
+    else
+        mycmakeargs+=(
+            -DCMAKE_BUILD_TYPE=Release
+        )
+    fi
+    cmake-utils_src_configure
 }

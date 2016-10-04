@@ -42,5 +42,16 @@ pkg_setup() {
 }
 
 src_configure() {
-  cmake-utils_src_configure
+    local mycmakeargs=(
+    )
+    if use debug; then
+        mycmakeargs+=(
+            -DCMAKE_BUILD_TYPE=Debug
+        )
+    else
+        mycmakeargs+=(
+            -DCMAKE_BUILD_TYPE=Release
+        )
+    fi
+    cmake-utils_src_configure
 }

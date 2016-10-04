@@ -10,6 +10,8 @@ DESCRIPTION="Qt5 Bible study application using the SWORD library."
 HOMEPAGE="http://www.bibletime.info/"
 EGIT_REPO_URI="https://github.com/bibletime/bibletime.git"
 
+IUSE="debug"
+
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
@@ -41,5 +43,16 @@ pkg_setup() {
 }
 
 src_configure() {
-  cmake-utils_src_configure
+    local mycmakeargs=(
+    )
+    if use debug; then
+        mycmakeargs+=(
+            -DCMAKE_BUILD_TYPE=Debug
+        )
+    else
+        mycmakeargs+=(
+            -DCMAKE_BUILD_TYPE=Release
+        )
+    fi
+    cmake-utils_src_configure
 }

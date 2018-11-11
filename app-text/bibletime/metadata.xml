@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <maintainer type="person">
+        <email>jaak+bibletime@ristioja.ee</email>
+        <name>Jaak Ristioja</name>
+    </maintainer>
+    <upstream>
+        <bugs-to>https://github.com/bibletime/bibletime/issues</bugs-to>
+    </upstream>
+    <longdescription>
+        BibleTime is a Bible study application, written using C++, the Sword and Qt5 libraries.
+    </longdescription>
+</pkgmetadata>

@@ -3,11 +3,11 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-inherit cmake-utils git-r3
+inherit cmake-utils
 
 DESCRIPTION="Qt5 Bible study application using the SWORD library."
 HOMEPAGE="http://www.bibletime.info/"
-EGIT_REPO_URI="https://github.com/bibletime/bibletime.git"
+SRC_URI="https://github.com/${PN}/${PN}/releases/download/v${PV}/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"

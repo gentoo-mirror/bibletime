@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
     <maintainer type="person">
-        <email>jaak+bibletime@ristioja.ee</email>
+        <email>jaak@ristioja.ee</email>
         <name>Jaak Ristioja</name>
     </maintainer>
     <upstream>
@@ -11,4 +11,10 @@
     <longdescription>
         BibleTime is a Bible study application, written using C++, the Sword and Qt5 libraries.
     </longdescription>
+    <use>
+        <flag name="handbook">Generate and install handbook in HTML format</flag>
+        <flag name="handbook_pdf">Generate and install handbook in PDF format</flag>
+        <flag name="howto">Generate and install howto in HTML format</flag>
+        <flag name="howto_pdf">Generate and install howto in PDF format</flag>
+    </use>
 </pkgmetadata>

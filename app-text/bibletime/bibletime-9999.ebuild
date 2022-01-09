@@ -38,7 +38,7 @@ BDEPEND="
 	howto? ( ${HTML_DOC_DEPENDS} )
 	howto_pdf? ( ${PDF_DOC_DEPENDS} )"
 
-DOCS="ChangeLog README.md"
+DOCS="README.md"
 
 pkg_setup() {
 	einfo "Please file bugs for this ebuild to https://github.com/bibletime/bibletime/issues"

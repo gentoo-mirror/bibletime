@@ -9,7 +9,7 @@
         <bugs-to>https://github.com/bibletime/bibletime/issues</bugs-to>
     </upstream>
     <longdescription>
-        BibleTime is a Bible study application, written using C++, the Sword and Qt5 libraries.
+        BibleTime is a Bible study application, written using C++, the Sword and Qt libraries.
     </longdescription>
     <use>
         <flag name="handbook">Generate and install handbook in HTML format</flag>

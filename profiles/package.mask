@@ -1,3 +1,0 @@
-# Only the most recent version of each branch is officially supported by the
-# BibleTime team:
-<app-text/bibletime-2.9.2

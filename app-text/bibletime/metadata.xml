@@ -9,12 +9,16 @@
         <bugs-to>https://github.com/bibletime/bibletime/issues</bugs-to>
     </upstream>
     <longdescription>
-        BibleTime is a Bible study application, written using C++, the Sword and Qt libraries.
+        BibleTime is a completely free Bible study program, built for Linux,
+        Windows, FreeBSD and Mac OS X. BibleTime contains over 200 free Bible
+        texts, commentaries, dictionaries and books, provided by the Crosswire
+        Bible Society via the SWORD programming library. BibleTime is written
+        in C++ and uses the Qt GUI toolkit.
     </longdescription>
     <use>
         <flag name="handbook">Generate and install handbook in HTML format</flag>
-        <flag name="handbook_pdf">Generate and install handbook in PDF format</flag>
+        <flag name="handbook-pdf">Generate and install handbook in PDF format</flag>
         <flag name="howto">Generate and install howto in HTML format</flag>
-        <flag name="howto_pdf">Generate and install howto in PDF format</flag>
+        <flag name="howto-pdf">Generate and install howto in PDF format</flag>
     </use>
 </pkgmetadata>

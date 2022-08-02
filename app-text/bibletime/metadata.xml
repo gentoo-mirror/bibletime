@@ -13,8 +13,8 @@
     </longdescription>
     <use>
         <flag name="handbook">Generate and install handbook in HTML format</flag>
-        <flag name="handbook_pdf">Generate and install handbook in PDF format</flag>
+        <flag name="handbook-pdf">Generate and install handbook in PDF format</flag>
         <flag name="howto">Generate and install howto in HTML format</flag>
-        <flag name="howto_pdf">Generate and install howto in PDF format</flag>
+        <flag name="howto-pdf">Generate and install howto in PDF format</flag>
     </use>
 </pkgmetadata>

@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/bibletime/bibletime.git"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+handbook +handbook-pdf +howto +howto-pdf"
+IUSE="handbook handbook-pdf howto howto-pdf"
 
 RDEPEND="
 	>=app-text/sword-1.8.1[curl]

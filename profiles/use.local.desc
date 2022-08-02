@@ -3,6 +3,6 @@
 # * generated automatically using pmaint *
 
 app-text/bibletime:handbook - Generate and install handbook in HTML format
-app-text/bibletime:handbook_pdf - Generate and install handbook in PDF format
+app-text/bibletime:handbook-pdf - Generate and install handbook in PDF format
 app-text/bibletime:howto - Generate and install howto in HTML format
-app-text/bibletime:howto_pdf - Generate and install howto in PDF format
+app-text/bibletime:howto-pdf - Generate and install howto in PDF format

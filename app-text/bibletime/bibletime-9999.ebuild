@@ -11,7 +11,6 @@ EGIT_REPO_URI="https://github.com/bibletime/bibletime.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
 IUSE="handbook handbook-pdf howto howto-pdf"
 
 RDEPEND="

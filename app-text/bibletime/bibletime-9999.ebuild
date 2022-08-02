@@ -3,7 +3,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-inherit cmake-utils git-r3
+inherit cmake git-r3
 
 DESCRIPTION="Qt5 Bible study application using the SWORD library."
 HOMEPAGE="http://www.bibletime.info/"
@@ -51,5 +51,5 @@ src_configure() {
 		-DBUILD_HOWTO_HTML=$(usex howto)
 		-DBUILD_HOWTO_PDF=$(usex howto_pdf)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }

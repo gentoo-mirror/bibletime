@@ -1,11 +1,11 @@
 # Copyright 1999-2018 Gentoo Authors
-# Copyright 2010-2020 The BibleTime team
+# Copyright 2010-2025 The BibleTime team
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 inherit cmake git-r3
 
-DESCRIPTION="Qt5 Bible study application using the SWORD library."
+DESCRIPTION="Qt Bible study application using the SWORD library."
 HOMEPAGE="http://www.bibletime.info/"
 EGIT_REPO_URI="https://github.com/bibletime/bibletime.git"
 
@@ -14,24 +14,16 @@ SLOT="0"
 IUSE="handbook handbook-pdf howto howto-pdf"
 
 RDEPEND="
-	>=app-text/sword-1.8.1[curl]
+	>=app-text/sword-1.8.1[curl,icu]
 	>=dev-cpp/clucene-0.9.16a
-	>=dev-qt/qtcore-5.6.0:5
-	dev-qt/qtwebengine:5[widgets]
-	dev-qt/qtwebchannel:5
-	dev-qt/qtgui:5
-	dev-qt/qtnetwork:5
-	dev-qt/qtprintsupport:5
-	dev-qt/qtscript:5
-	dev-qt/qtsvg:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtxml:5"
-DEPEND="${RDEPEND}
-	dev-qt/qttest:5"
+	dev-qt/qtbase[gui,widgets,xml]
+	dev-qt/qtdeclarative:6[widgets]
+	dev-qt/qtsvg:6"
+DEPEND="${RDEPEND}"
 HTML_DOC_DEPENDS="app-text/docbook-xsl-stylesheets app-text/po4a dev-libs/libxslt"
 PDF_DOC_DEPENDS="${HTML_DOC_DEPENDS} dev-java/fop"
 BDEPEND="
-	dev-qt/linguist-tools:5
+	dev-qt/qttools[linguist]
 	handbook? ( ${HTML_DOC_DEPENDS} )
 	handbook-pdf? ( ${PDF_DOC_DEPENDS} )
 	howto? ( ${HTML_DOC_DEPENDS} )
@@ -45,6 +37,7 @@ pkg_setup() {
 
 src_configure() {
 	local mycmakeargs=(
+		-DUSE_QT6=ON
 		-DBUILD_HANDBOOK_HTML=$(usex handbook)
 		-DBUILD_HANDBOOK_PDF=$(usex handbook-pdf)
 		-DBUILD_HOWTO_HTML=$(usex howto)

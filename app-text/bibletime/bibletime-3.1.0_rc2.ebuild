@@ -17,7 +17,7 @@ IUSE="handbook handbook-pdf howto howto-pdf"
 RDEPEND="
 	>=app-text/sword-1.8.1[curl,icu]
 	>=dev-cpp/clucene-0.9.16a
-	dev-qt/qtbase[gui,widgets,xml]
+	dev-qt/qtbase[gui,network,widgets,xml]
 	dev-qt/qtdeclarative:6[widgets]
 	dev-qt/qtsvg:6"
 DEPEND="${RDEPEND}"

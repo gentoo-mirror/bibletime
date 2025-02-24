@@ -11,7 +11,7 @@ SRC_URI="https://github.com/${PN}/${PN}/releases/download/v${PV}/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="handbook handbook-pdf howto howto-pdf"
 
 RDEPEND="
@@ -38,7 +38,6 @@ pkg_setup() {
 
 src_configure() {
 	local mycmakeargs=(
-		-DUSE_QT6=ON
 		-DBUILD_HANDBOOK_HTML=$(usex handbook)
 		-DBUILD_HANDBOOK_PDF=$(usex handbook-pdf)
 		-DBUILD_HOWTO_HTML=$(usex howto)

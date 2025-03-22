@@ -37,7 +37,6 @@ pkg_setup() {
 
 src_configure() {
 	local mycmakeargs=(
-		-DUSE_QT6=ON
 		-DBUILD_HANDBOOK_HTML=$(usex handbook)
 		-DBUILD_HANDBOOK_PDF=$(usex handbook-pdf)
 		-DBUILD_HOWTO_HTML=$(usex howto)
